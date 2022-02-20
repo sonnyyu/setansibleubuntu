@@ -37,4 +37,12 @@ Test password less ssh login
 ```sh
 ansible-playbook  checkpwless.yml
 ```
+Test Ad-hoc 
+```sh
+ansible all -m ping
+ansible all -a "df -h" 
+ansible all -a "free -h"
+ansible all -m apt -a "name=tree state=latest" -b
+ansible all -a "uptime"
+```
 
