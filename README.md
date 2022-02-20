@@ -29,7 +29,7 @@ Edit hosts-dev with IP address
 app1 ansible_host=192.168.1.2
 app2 ansible_host=192.168.1.3
 ```
-Run Playbook
+Run Playbook to create password less login at nodes
 ```sh
 ansible-playbook playbook.yml -usonnyyu -bK --ask-pass
 ```
