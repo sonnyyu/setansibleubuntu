@@ -33,6 +33,8 @@
         groups: wheel
         append: true
         create_home: true
+        password: "{{ userpass | password_hash('sha512') }}"
+        update_password: on_create
         shell: /bin/bash
 
     - name: Set authorized key for remote user
