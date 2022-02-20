@@ -15,10 +15,10 @@ ssh-keygen
 ```
 Make sure current user as devops
 ```sh
-whoami
-```
+$ whoami
 devops
-
+```
+Clone github
 ```sh
 git clone https://github.com/sonnyyu/setupansibleubuntu
 cd setupansibleubuntu
