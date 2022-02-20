@@ -6,6 +6,7 @@
   become: true
   vars:
     - create_user: devops 
+    - userpass: devops_password
     - sys_packages: [ 'curl', 'vim', 'git', 'ufw']
   tasks:
     - name: Install Prerequisites
