@@ -6,3 +6,14 @@ su devops
 cd ~
 ssh-keygen
 ```
+
+```sh
+whoami
+```
+devops
+
+```sh
+ansible-playbook playbook.yml -usonnyyu -bK --ask-pass
+```
+
+
