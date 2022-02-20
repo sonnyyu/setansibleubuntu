@@ -33,5 +33,8 @@ Run Playbook
 ```sh
 ansible-playbook playbook.yml -usonnyyu -bK --ask-pass
 ```
-
+Test password less ssh login
+```sh
+ansible-playbook  checkpwless.yml
+``
 
