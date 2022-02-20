@@ -37,9 +37,11 @@ cd setupansibleubuntu
 Edit hosts-dev with IP address
 ```sh
 nano hosts-dev
-[webservers]
-app1 ansible_host=192.168.1.2
-app2 ansible_host=192.168.1.3
+[kubemaster]
+kubemaster1 ansible_host=192.168.1.2
+[kubeworkers]
+kubeworkers1 ansible_host=192.168.1.3
+kubeworkers2 ansible_host=192.168.1.4
 ```
 Run Playbook to create password less login at nodes
 ```sh
