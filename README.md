@@ -1,9 +1,10 @@
 # setup ansible ubuntu
-Made 3 Ubuntu18.04 machines ready 
+Made 4 Ubuntu18.04 machines ready 
 ```sh
 192.168.1.1
 192.168.1.2
 192.168.1.3
+192.168.1.4
 ```
 Use 192.168.1.1 as control machine, others for nodes
 
