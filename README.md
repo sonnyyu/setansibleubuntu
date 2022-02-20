@@ -1,4 +1,13 @@
 # setup ansible ubuntu
+Made 3 Ubuntu18.04 machines ready 
+```sh
+192.168.1.1
+192.168.1.2
+192.168.1.3
+```
+Use 192.168.1.1 as control machine, others for nodes
+all of them has sonnyyu as sudo user .
+
 Install ansible at control machine:
 ```sh
 sudo apt-add-repository ppa:ansible/ansible -y
