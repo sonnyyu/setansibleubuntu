@@ -1,5 +1,11 @@
 # setup ansible ubuntu
-Setup devops user at host
+Install ansible at host:
+```sh
+sudo apt-add-repository ppa:ansible/ansible -y
+sudo apt update -y
+sudo apt install ansible -y
+```
+Create devops user at host
 ```sh
 sudo adduser devops
 sudo usermod -aG sudo devops
@@ -7,7 +13,7 @@ su devops
 cd ~
 ssh-keygen
 ```
-
+Make sure current user as devops
 ```sh
 whoami
 ```
