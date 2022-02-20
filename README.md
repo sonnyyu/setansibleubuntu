@@ -1,11 +1,11 @@
 # setup ansible ubuntu
-Install ansible at host:
+Install ansible at control machine:
 ```sh
 sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt update -y
 sudo apt install ansible -y
 ```
-Create devops user at host
+Create devops user at control machine
 ```sh
 sudo adduser devops
 sudo usermod -aG sudo devops
