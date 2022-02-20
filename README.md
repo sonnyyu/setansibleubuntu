@@ -1,7 +1,8 @@
 # setup ansible ubuntu
-```code```
+```sh
 sudo adduser devops
 usermod -aG sudo devops
 su devops
 cd ~
 ssh-keygen
+```
