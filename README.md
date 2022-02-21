@@ -67,7 +67,10 @@ ansible_python_interpreter=/usr/bin/python3
 [kubemaster:vars]
 ansible_python_interpreter=/usr/bin/python3
 ```
-
+Install Python 2
+```sh
+ansible  all  -m raw -a "apt install -y python" -usonnyyu -bK --ask-pass
+```
 Test Ad-hoc 
 ```sh
 ansible all -m ping
