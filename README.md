@@ -67,6 +67,15 @@ ansible_python_interpreter=/usr/bin/python3
 [kubemaster:vars]
 ansible_python_interpreter=/usr/bin/python3
 ```
+Or
+
+```sh
+nano ansible.cfg
+...
+retry_files_enabled = False
+interpreter_python = /usr/bin/python3
+```
+
 Install Python 2
 ```sh
 ansible  all  -m raw -a "apt install -y python" -usonnyyu -bK --ask-pass
