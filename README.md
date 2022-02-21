@@ -56,14 +56,16 @@ Test which version python installed
 ansible all  -m shell -a 'python -V'
 ansible all  -m shell -a 'python3 -V'
 ```
-Setup 
+Setup ansible_python_interpreter
 ```sh
 nano hosts-dev
 [kubemaster]
-kubemaster1 ansible_host=192.168.1.2
-[kubeworkers]
-kubeworkers1 ansible_host=192.168.1.3
-kubeworkers2 ansible_host=192.168.1.4
+...
+[kubeworkers:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[kubemaster:vars]
+ansible_python_interpreter=/usr/bin/python3
 ```
 
 Test Ad-hoc 
