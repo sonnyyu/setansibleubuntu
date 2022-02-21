@@ -51,6 +51,21 @@ Test password less ssh login
 ```sh
 ansible-playbook  checkpwless.yml
 ```
+Test which version python installed
+```sh
+ansible all  -m shell -a 'python -V'
+ansible all  -m shell -a 'python3 -V'
+```
+Setup 
+```sh
+nano hosts-dev
+[kubemaster]
+kubemaster1 ansible_host=192.168.1.2
+[kubeworkers]
+kubeworkers1 ansible_host=192.168.1.3
+kubeworkers2 ansible_host=192.168.1.4
+```
+
 Test Ad-hoc 
 ```sh
 ansible all -m ping
